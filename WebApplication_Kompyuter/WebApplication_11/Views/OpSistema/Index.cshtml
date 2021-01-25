@@ -1,0 +1,110 @@
+﻿@model PagedList.IPagedList<WebApplication_11.Models.OpSistema>
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align-last:center">Operatsion Sistema</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th><b>Operatsion sistema turi</b></th>
+        <th><b>Operatsion sistema razryadi</b></th>
+        <th><b>Rasmi</b></th>
+        <th><b>Ma'lumoti</b></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Turi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Raziryad)
+        </td>
+        <td>
+            <img src="/Image/@item.OS_rasm" width="100" height="100" alt="rasm"/>
+            @*@Html.DisplayFor(modelItem => item.OS_rasm)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.Malumot)
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+Sahifa @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) dan @Model.PageCount
+
+
+
+@Html.PagedListPager(Model, page5 => Url.Action("Index", new { page5 }))
+
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            <div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/33.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Windows 10 Operatsion sistemasi!</h4>
+                            <p>Operatsion sistema - bu sistema kompyuterni tashkil etuvchi
+qurilmalar (Hardware)ni eng quyi pog‘onada boshqaradi. Bu
+kompyuterga ma’lumotlarni qanday saqlashni, diskka qanday
+yozishni va diskdan qanday o‘qishni, ekranda ma’lumotlarni
+qanday aks ettirishlikni, sichqoncha va klaviaturadan
+ma’lumotlarni qanday olishlik va h.k. larni buyuradi. Apple ning operatsion sistemasidir. Bu ham
+Windowsdan yanada samarali ishlay oladi.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/69.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">O'zingizga qulay bo'lgan Operatsion sistemadan foydalaning!</h4>
+                            <p>Windows - bugungi kunda eng keng tarqalgan operatsion
+sistemadir. Microsoft kompaniyasi tomonidan ishlab chiqilgan.
+Bugungi kundagi 90% shaxsiy kompyuterlar shu sistema asosida
+ishlaydi desak mubolag‘a bo4lmaydi.Bunday
+programmalar majmui amaliy programmalar paketi deb ataladi. </p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/rasm/69.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Windows 8.1 Operatsion sistemasi!</h4>
+                            <p>Inglizcha PC qisqartmasi ya’ni shaxsiy kompyuter atamasi
+bugungi kunda korxonalar, muassasalar, oliy o ‘quv
+yurtlarida, shuningdek, shaxsiy foydalanishdagi asosan
+Windows operatsion sistemasi bilan ta’minlangan IBM
+rusumiga mos oddiy kompyuterga ham, noutbukka ham
+qo‘llanilib kelinmoqda.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

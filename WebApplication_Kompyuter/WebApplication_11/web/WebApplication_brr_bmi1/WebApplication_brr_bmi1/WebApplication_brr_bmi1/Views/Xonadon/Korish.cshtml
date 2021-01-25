@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WebApplication_brr_bmi1.Models.Users>
+
+@{
+    ViewBag.Title = "Korish";
+}
+
+<h2>Korish</h2>
+
+
+<table class="table table-striped">
+    <tr class="table-">
+
+        <th>
+            @Html.DisplayNameFor(model => model.Login)
+        </th>
+        <th>
+            Parol
+        </th>
+       
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td class="table-hover">
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+
+        </tr>
+    }
+
+</table>

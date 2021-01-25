@@ -1,0 +1,74 @@
+﻿@model WebApplication_11.Models.Yigish
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Ma'lumotlar</h2>
+
+<div>
+    <h4>Yigish</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kalonka.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kalonka.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Klaviatura.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Klaviatura.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manitor.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manitor.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpSistema.Turi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpSistema.Turi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Protsessor.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Protsessor.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xotira.Xajmi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xotira.Xajmi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Summa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Summa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("O'zgartirish", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Orqaga qaytish", "Index")
+</p>

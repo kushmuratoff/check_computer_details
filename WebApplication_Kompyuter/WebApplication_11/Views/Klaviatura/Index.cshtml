@@ -1,0 +1,108 @@
+﻿@model PagedList.IPagedList<WebApplication_11.Models.Klaviatura>
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align-last:center">Klaviaturalar</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th><b>Kompaniya nomi</b></th>
+        <th><b>Klaviatura nomi</b></th>
+        <th><b>Narxi</b></th>
+        <th><b>Rasmi</b></th>
+        <th><b>Ma'lumoti</b></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kompaniya.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Narxi)
+        </td>
+        <td>
+            <img src="/Image/@item.Klav_rasm" width="100" height="100" alt="rasm" />
+
+            @*@Html.DisplayFor(modelItem => item.Klav_rasm)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Malumot)
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+Sahifa @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) dan @Model.PageCount
+
+
+
+@Html.PagedListPager(Model, page2 => Url.Action("Index", new { page2 }))
+
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            <div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/45.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizning klaviaturasi qanday bo'lishini xohlaysiz?</h4>
+                            <p>Windows XP da ko‘p amallar sichqoncha yordamida
+osongina bajariladi, lekin ma’lumotlar kiritish esa asosan
+klaviatura orqali amalga oshiriladi. Shuningdek, klaviatura
+sichqonchaning vazifalarini ham bajarishi mumkin.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/57.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">O'zingizga qulay bo'lgan klaviaturadan foydalaning!</h4>
+                            <p>Ba’zi amallar funksiya klavishlari orqali ham amalga
+oshirilishi mumkin. Masalan, FI tugmasi orqali “Yordam” tizimi
+ishga tushirilishi mumkin.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/rasm/39.jpeg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizni qo'shimcha qurilmalar bilan boyiting!</h4>
+                            <p>[Alt] - [Ctrl] kabi boshqa tugmalar bilan birga qo‘llaniladi.
+[Backspace] - bitta oldingi belgini o'chiradi.
+[Delete] - fayllarni, papkalarni va ekrandagi boshqa
+obyektlarni o ‘chirish uchun qo‘llaniladi.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

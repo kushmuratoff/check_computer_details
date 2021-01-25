@@ -1,0 +1,50 @@
+﻿@model WebApplication_11.Models.Foydalanuvchi
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Foydalanuvchi</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Userlar.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Userlar.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FISH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FISH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uy_manzili)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uy_manzili)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tel_nomeri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel_nomeri)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

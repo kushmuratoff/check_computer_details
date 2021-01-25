@@ -1,0 +1,26 @@
+﻿@model WebApplication_11.Models.Rollar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Ma'lumotlar</h2>
+
+<div>
+    <h4>Rollar</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nomi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("O'zgartirish", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Orqaga qaytish", "Index")
+</p>

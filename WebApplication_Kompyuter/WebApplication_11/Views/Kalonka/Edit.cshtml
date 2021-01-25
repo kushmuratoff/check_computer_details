@@ -1,0 +1,74 @@
+﻿@model WebApplication_11.Models.Kalonka
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>O'zgartirish</h2>
+
+
+@using (Html.BeginForm("Edit", "Kalonka", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Kalonka</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nomi, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nomi)
+                @Html.ValidationMessageFor(model => model.Nomi)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Narxi, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Narxi)
+                @Html.ValidationMessageFor(model => model.Narxi)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KompaniyaId, "KompaniyaId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("KompaniyaId", String.Empty)
+                @Html.ValidationMessageFor(model => model.KompaniyaId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Kalon_rasm, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="Imagefile" value="hd" required />
+            </div>
+          
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Malumot, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Malumot)
+                @Html.ValidationMessageFor(model => model.Malumot)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Orqaga qaytish", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

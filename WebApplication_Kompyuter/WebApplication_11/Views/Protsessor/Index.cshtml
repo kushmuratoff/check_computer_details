@@ -1,0 +1,115 @@
+﻿@model PagedList.IPagedList<WebApplication_11.Models.Protsessor>
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2 style="text-align-last:center">Protsessorlar</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th><b>Kompaniya nomi</b></th>
+        <th><b>OZU xajmi</b></th>
+        <th><b>Video kartasi</b></th>
+        <th><b>Protsessor nomi</b></th>
+        <th><b>Narxi</b></th>
+        <th><b>Rasmi</b></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kompaniya.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OZU.Xajmi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideoKarta.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Narxi)
+        </td>
+        <td>
+            <img src="/Image/@item.Prots_rasm" width="100" height="100" alt="rasm" />
+
+            @*@Html.DisplayFor(modelItem => item.Prots_rasm)*@
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+Sahifa @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) dan @Model.PageCount
+
+
+
+@Html.PagedListPager(Model, page7 => Url.Action("Index", new { page7 }))
+
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            <div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/23.jpg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Protsessor</h4>
+                            <p>Mikroprotsessor quvvati - bu uning tezligi va ichki xotirasi
+hajmiga bog‘liqdir. Ma’lumotlar ishlanayotgan vaqtida ular
+qayergadir saqlanib borishi kerak. Bu vazifani mikroprotsessor
+ya’ni chip orqali amalga oshiriladi.Agar ma’lumotlar chipga
+saqlansa unga kirish va undan foydalanish imkoni tezlashadi
+va qulaylashadi.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid" >
+                        <img src="/rasm/63.jpg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Intel-eng ommabop protseeorlar hisoblanadi. </h4>
+                            <p>Mikroprotsessorning quvvati Gerts (Hz) bilan
+o'lchanadi. 1Hz davriy jarayon chastotasi bo‘lib, bunda 1
+sekundda protsessning 1 sikli amalga oshadi. Gerts karrali
+birliklarda ham ifodalanadi - kilogerts (1 KGts = 103Gts),
+megagerts (lMGts = 106Gts) va h.k.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/rasm/7.jpg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizning ishlash tezligi protsessorga bog'liq.</h4>
+                            <p>Mikroprotsessorning quvvati Gerts (Hz) bilan
+olchanadi. 1Hz davriy jarayon chastotasi bo‘lib, bunda 1
+sekundda protsessning 1 sikli amalga oshadi. Gerts karrali
+birliklarda ham ifodalanadi - kilogerts (1 KGts = 103Gts)</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

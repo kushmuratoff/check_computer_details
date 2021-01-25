@@ -1,0 +1,138 @@
+﻿@model IEnumerable<WebApplication_11.Models.Yigish>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align-last:center">Buyurtmalar</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <b>Blok pitaniya</b>
+        </th>
+        <th>
+            <b>Qattiq disk</b>
+        </th>
+        <th>
+            <b>Ona plata</b>
+        </th>
+        <th>
+            <b>Protsessor nomi</b>
+        </th>
+        <th>
+            <b>Korpus</b>
+        </th>
+        <th>
+            <b>Operatsion sistema turi</b>
+        </th>
+        <th>
+            <b>Kalonka nomi</b>
+        </th>
+        <th>
+            <b>Klaviatura nomi</b>
+        </th>
+        <th>
+            <b>Monitor nomi</b>
+        </th>
+        <th>
+            <b>Sichqoncha</b>
+        </th>
+        <th>
+            <b>Umumiy hisob</b>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Blokpitaniya.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qattiqdisk.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Onaplata.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Protsessor.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kalonka.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OpSistema.Turi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kalonka.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Klaviatura.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manitor.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sichqoncha.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Xotira.Xajmi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Summa)
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            @*<div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/37.jpeg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizni yig'ing!</h4>
+                            <p>Cras dignissim hendrerit sdfsdf sdfgsdg sgdgsdg sgsdgsd sdgs hjyjd fgasfgs fhgs sdfdsdgsdgs dgsdgsdfd dfg segsdg diam, condimentum faucibus leo placerat et. Etiam gravida eros ac purus pretium accumsan. Fusce sit amet diam in lectus viverra bibendum. Nunc vulputate venenatis justo, et facilisis dui porttitor ut. Curabitur eu urna et purus convallis pharetra. Integer pellentesque sapien eget ligula rhoncus vel euismod orci semper.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/61.jpeg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">O'zingizga qulay bo'lgan klaviaturadan foydalaning!</h4>
+                            <p>Sed bibendum suscipit posuere. Phasellus nulla est, rhoncus non ultrices eu, lacinia ut est. Donec sodales viverra elit. Ut a malesuada diam. Suspendisse fringilla sagittis auctor. Mauris aliquam suscipit adipiscing. Pellentesque adipiscing ultrices fringilla. Maecenas semper neque nec nulla varius ultrices. Aenean rhoncus enim nec justo malesuada interdum.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/rasm/1.jpeg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizni qo'shimcha qurilmalar bilan boyiting!</h4>
+                            <p>Nullam pellentesque ipsum eget ante rutrum feugiat at vitae est. Pellentesque nulla ipsum, pretium ac ultrices non, tincidunt id quam. Mauris dignissim dolor quis risus molestie et pulvinar nunc placerat. Nunc feugiat, nunc sit amet lobortis facilisis, nulla arcu tincidunt urna, et blandit eros lectus a duiPhasellus a tellus magna. Fusce pretium ante a massa lobortis,</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>*@
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

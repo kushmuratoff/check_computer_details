@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebApplication_11.Models.Rollar>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align-last:center">Rollar</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table ">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nomi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nomi)
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            <div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/web/images/pic1.jpg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Admistratorlar</h4>
+                            <p>Cras dignissim hendrerit diam, condimentum faucibus leo placerat et. Etiam gravida eros ac purus pretium accumsan. Fusce sit amet diam in lectus viverra bibendum. Nunc vulputate venenatis justo, et facilisis dui porttitor ut. Curabitur eu urna et purus convallis pharetra. Integer pellentesque sapien eget ligula rhoncus vel euismod orci semper.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/web/images/pic2.jpg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Hamkorlar</h4>
+                            <p>Sed bibendum suscipit posuere. Phasellus nulla est, rhoncus non ultrices eu, lacinia ut est. Donec sodales viverra elit. Ut a malesuada diam. Suspendisse fringilla sagittis auctor. Mauris aliquam suscipit adipiscing. Pellentesque adipiscing ultrices fringilla. Maecenas semper neque nec nulla varius ultrices. Aenean rhoncus enim nec justo malesuada interdum.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/web/images/pic3.jpg" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Foydalanuvchilar</h4>
+                            <p>Nullam pellentesque ipsum eget ante rutrum feugiat at vitae est. Pellentesque nulla ipsum, pretium ac ultrices non, tincidunt id quam. Mauris dignissim dolor quis risus molestie et pulvinar nunc placerat. Nunc feugiat, nunc sit amet lobortis facilisis, nulla arcu tincidunt urna, et blandit eros lectus a duiPhasellus a tellus magna. Fusce pretium ante a massa lobortis,</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

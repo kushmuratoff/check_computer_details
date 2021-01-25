@@ -1,0 +1,42 @@
+﻿@model WebApplication_11.Models.Buyurtma
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Ma'lumot</h2>
+
+<div>
+    <h4>Buyurtma</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Foydalanuvchi.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Foydalanuvchi.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Yigish.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yigish.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Holati)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Holati)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Ma'lumot", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Orqaga qaytish", "Index")
+</p>

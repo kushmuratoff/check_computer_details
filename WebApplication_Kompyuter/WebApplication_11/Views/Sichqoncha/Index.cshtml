@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebApplication_11.Models.Sichqoncha>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align-last:center">Sichqonchalar</h2>
+
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Kompaniya.Nomi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nomi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Narxi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.malumot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sichqoncha_rasm)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kompaniya.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Narxi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.malumot)
+        </td>
+        <td>
+            <img src="/Image/@item.Sichqoncha_rasm" width="100" height="100" alt="rasm" />
+
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+            @Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

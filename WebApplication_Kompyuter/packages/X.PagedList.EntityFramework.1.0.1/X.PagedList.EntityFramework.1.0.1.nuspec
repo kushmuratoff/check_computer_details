@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>X.PagedList.EntityFramework</id>
+    <version>1.0.1</version>
+    <authors>Nick Strupat</authors>
+    <owners>Nick Strupat</owners>
+    <projectUrl>https://github.com/NickStrupat/PagedList.EntityFramework/tree/X.PagedList</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An async/await enabled extension for https://github.com/kpi-ua/X.PagedList</description>
+    <dependencies>
+      <dependency id="X.PagedList" version="1.24.1.320" />
+      <dependency id="EntityFramework" version="6.1.3" />
+    </dependencies>
+  </metadata>
+</package>

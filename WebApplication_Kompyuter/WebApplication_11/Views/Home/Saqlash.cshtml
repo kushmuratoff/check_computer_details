@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Saqlash";
+}
+
+
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+              
+                <div class="form" style="text-align:center;">
+                    <h3>Ma'lumotlaringizni kiriting</h3>
+                    <p style="color: red; text-align: center">@ViewBag.habar</p>
+                    <form action="/Home/Saqlash" method="post">
+                        <input type="text" name="Fam" placeholder="FIO" required="">  <br /><br />    
+                        <input type="text" name="UyManzil" placeholder="Yo'nalishi" required=""><br /><br />
+                        <input type="text" name="TelNom" placeholder="Guruhi" required="">  <br /><br />                    
+                        <input type="text" name="Login" placeholder="Login" required="" value="@ViewBag.Login" hidden="hidden">
+                        <input type="text" name="Parol" placeholder="Parol" required="" value="@ViewBag.Parol" hidden="hidden">
+                        <input type="submit" value="Saqlash" class="btn btn-success">
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+
+    function Ok() {
+        var s = document.getElementById("sel").value;
+        alert(s);
+    }
+</script>

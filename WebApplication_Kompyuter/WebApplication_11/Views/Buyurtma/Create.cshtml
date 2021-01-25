@@ -1,0 +1,57 @@
+﻿@model WebApplication_11.Models.Buyurtma
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Yangi qo'shish</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Buyurtma</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FoydalanuvchiId, "FoydalanuvchiId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("FoydalanuvchiId", String.Empty)
+                @Html.ValidationMessageFor(model => model.FoydalanuvchiId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.YigishId, "YigishId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("YigishId", String.Empty)
+                @Html.ValidationMessageFor(model => model.YigishId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Holati, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Holati)
+                @Html.ValidationMessageFor(model => model.Holati)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Orqaga qaytish", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

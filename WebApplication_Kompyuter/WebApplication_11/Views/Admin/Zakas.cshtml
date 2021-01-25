@@ -1,0 +1,382 @@
+﻿@model WebApplication_11.Models.Sahifa
+@using WebApplication_11.Models
+
+@{
+    ViewBag.Title = "Saqlash";
+}
+@*<h1>@ViewBag.h</h1>*@
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+               
+                <div class="form" style="text-align:center;">
+                    <h3>Yig'ish uchun qurilmalarni tanlang</h3>
+                    <p style="color: red; text-align: center">@ViewBag.habar</p>
+                    <form action="/Admin/Zakas" method="post">
+                       
+                        <table  width="400" height="200" style="margin-left:30%;">
+                            <tr>
+                                <td><label>Blok pitaniya</label></td>
+                                <td>
+                                    <select style="width:200px;" name="BlokpitaniyaId" required="" id="selbl" onchange="Ok()">
+                                        <option>Tanlang...</option>
+                                        @foreach (Blokpitaniya op in Model.Blokpitaniya)
+                                        {
+                                            <option value="@op.Id">@op.Nomi</option>
+                                        }
+                                    </select>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td><label>Qattiq disk</label></td>
+                                <td>
+                                    <select style="width:200px;" name="QattiqdiskId" required="" id="selqatd" onchange="Ok()">
+                                        <option>Tanlang...</option>
+                                        @foreach (Qattiqdisk op in Model.Qattiqdisk)
+                                        {
+                                            <option value="@op.Id">@op.Nomi</option>
+                                        }
+                                    </select>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td><label>Ona plata</label></td>
+                                <td>
+                                    <select style="width:200px;" name="OnaplataId" required="" id="selona" onchange="Ok()">
+                                        <option>Tanlang...</option>
+                                        @foreach (Onaplata op in Model.Onaplata)
+                                        {
+                                            <option value="@op.Id">@op.Nomi</option>
+                                        }
+                                    </select>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Protsessor</label>
+                                </td>
+                                <td>
+                                    <select style="width:200px;" name="ProtsessorId" required="" id="selpro" onchange="Ok()">
+                                        <option>Tanlang...</option>
+                                        @foreach (Protsessor x in Model.Protsessor)
+                                        {
+                                            <option value="@x.Id">@x.Nomi @x.Kompaniya.Nomi @x.Narxi</option>
+                                        }
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Korpus</label></td>
+                                <td>
+                                    <select style="width:200px;" name="KorpusId" required="" id="selkor" onchange="Ok()">
+                                        <option>Tanlang...</option>
+                                        @foreach (Korpus op in Model.Korpus)
+                                        {
+                                            <option value="@op.Id">@op.Nomi</option>
+                                        }
+                                    </select>
+                                </td>
+
+                            </tr>
+                            
+                        
+
+                            <tr>
+                                <td><label>Operatsion sistema</label></td>
+                                <td><select style="width:200px;" name="OpSistemaId" required="" id="selop" onchange="Ok()">
+                                       <option >Tanlang...</option>
+                                         @foreach (OpSistema op in Model.OpSistema)
+                                           {
+                                               <option value="@op.Id">@op.Turi @op.Raziryad</option>
+                                            }
+                                        </select></td>
+
+                            </tr>
+                          
+                            <tr>
+                                <td>
+                                    <label>Kalonka</label>
+                                </td>
+                                <td>
+                                    <select style="width:200px;" name="KalonkaId" required="" id="selkol" onchange="Ok()">
+                                        <option >Tanlang...</option>
+                                        @foreach (Kalonka x in Model.Kalonka)
+                                        {
+                                            <option value="@x.Id">@x.Nomi @x.Kompaniya.Nomi @x.Narxi</option>
+                                        }
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Klaviatura</label>
+                                </td>
+                                <td>
+                                    <select style="width:200px;" name="KlaviaturaId" required="" id="selkl" onchange="Ok()">
+                                        <option >Tanlang...</option>
+                                        @foreach (Klaviatura x in Model.Klaviatura)
+                                        {
+                                            <option value="@x.Id">@x.Nomi @x.Kompaniya.Nomi @x.Narxi</option>
+                                        }
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Manitor</label>
+                                </td>
+                                <td>
+                                    <select style="width:200px;" name="ManitorId" required="" id="selman" onchange="Ok()">
+                                        <option >Tanlang...</option>
+                                        @foreach (Manitor x in Model.Manitor)
+                                        {
+                                            <option value="@x.Id">@x.Nomi @x.Kompaniya.Nomi @x.Narxi</option>
+                                        }
+                                    </select>
+            
+                                                    </td>
+                            </tr>
+                            <tr>
+                                <td><label>Sichqoncha</label></td>
+                                <td>
+                                    <select style="width:200px;" name="SichqonchaId" required="" id="selsich" onchange="Ok()">
+                                        <option>Tanlang...</option>
+                                        @foreach (Sichqoncha op in Model.Sichqoncha)
+                                        {
+                                            <option value="@op.Id">@op.Nomi</option>
+                                        }
+                                    </select>
+                                </td>
+
+                            </tr>
+                          
+                        </table>
+                       
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"><p id="mal"></p></div>
+                            <div class="col-md-3">
+                               <p id="ras">
+                                </p>
+                            </div>
+
+                        </div>
+                        <input type="text" name="Login" placeholder="Login" required="" value="@ViewBag.login" hidden="hidden"><br /><br />
+                        <input type="submit" value="Natija" class="btn btn-success" >
+                    </form>
+               
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $('#selop').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getOp/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {               
+                rasm += '<img src= "' + "/rasm/" + subCatObj.OS_rasm + '"width="150"  >';
+                malumot +="Ma'lumot: "+ subCatObj.Malumot+'<br><br><br>'+"Narxi: "+subCatObj.Narxi+" so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    //$('#selxot').on('change', function (e) {
+    //    var id = e.target.value;
+    //    var ur = '/Admin/getXotira/' + id;
+    //    $.post(ur, function (data) {
+    //        var rasm = "";
+    //        var malumot = "";
+    //        $('#mal').empty();
+    //        $('#ras').empty();
+
+    //        $.each(data, function (index, subCatObj) {
+    //            rasm += '<img src= "' + "/rasm/" + subCatObj.Xotira_rasm + '"width="150"  >';
+    //            malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+    //        });
+    //        $('#mal').append(malumot);
+    //        $('#ras').append(rasm);
+
+    //    });
+    //});
+    $('#selkol').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getKol/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/rasm/" + subCatObj.Kalon_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selpro').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getPro/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/rasm/" + subCatObj.Prots_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selkl').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getKlv/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/rasm/" + subCatObj.Klav_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selman').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getMan/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/rasm/" + subCatObj.Mon_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selsich').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getSich/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/rasm/" + subCatObj.Sichqoncha_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selkor').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getKor/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/Image/" + subCatObj.Korpus_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selona').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getOna/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/Image/" + subCatObj.Onaplata_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selqatd').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getQat/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/Image/" + subCatObj.Qattiqdisk_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+    $('#selbl').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getBl/' + id;
+        $.post(ur, function (data) {
+            var rasm = "";
+            var malumot = "";
+            $('#mal').empty();
+            $('#ras').empty();
+
+            $.each(data, function (index, subCatObj) {
+                rasm += '<img src= "' + "/Image/" + subCatObj.Blokpitaniya_rasm + '"width="150"  >';
+                malumot += "Ma'lumot: " + subCatObj.Malumot + '<br><br><br>' + "Narxi: " + subCatObj.Narxi + " so'm ";
+            });
+            $('#mal').append(malumot);
+            $('#ras').append(rasm);
+
+        });
+    });
+
+
+   
+</script>

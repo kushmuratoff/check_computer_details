@@ -1,0 +1,90 @@
+﻿@model WebApplication_11.Models.Yigish
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>O'zgartirish</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Yigish</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OpSistemaId, "OpSistemaId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("OpSistemaId", String.Empty)
+                @Html.ValidationMessageFor(model => model.OpSistemaId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.XotiraId, "XotiraId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("XotiraId", String.Empty)
+                @Html.ValidationMessageFor(model => model.XotiraId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KalonkaId, "KalonkaId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("KalonkaId", String.Empty)
+                @Html.ValidationMessageFor(model => model.KalonkaId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProtsessorId, "ProtsessorId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ProtsessorId", String.Empty)
+                @Html.ValidationMessageFor(model => model.ProtsessorId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KlaviaturaId, "KlaviaturaId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("KlaviaturaId", String.Empty)
+                @Html.ValidationMessageFor(model => model.KlaviaturaId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ManitorId, "ManitorId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ManitorId", String.Empty)
+                @Html.ValidationMessageFor(model => model.ManitorId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Summa, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Summa)
+                @Html.ValidationMessageFor(model => model.Summa)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Orqaga qaytish", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

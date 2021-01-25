@@ -1,0 +1,58 @@
+﻿@model WebApplication_11.Models.Sichqoncha
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sichqoncha</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kompaniya.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kompaniya.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Narxi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Narxi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.malumot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.malumot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sichqoncha_rasm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sichqoncha_rasm)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

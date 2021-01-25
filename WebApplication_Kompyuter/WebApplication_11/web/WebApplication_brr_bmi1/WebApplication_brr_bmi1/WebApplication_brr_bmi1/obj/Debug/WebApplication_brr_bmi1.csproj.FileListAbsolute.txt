@@ -1,0 +1,82 @@
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebApplication_brr_bmi1.dll.config
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebApplication_brr_bmi1.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebApplication_brr_bmi1.pdb
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Antlr3.Runtime.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.SqlServer.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Newtonsoft.Json.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Helpers.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Mvc.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Optimization.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Razor.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Razor.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebGrease.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.SqlServer.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Helpers.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Mvc.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Optimization.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Razor.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Razor.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Newtonsoft.Json.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Antlr3.Runtime.pdb
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.InitialCreate.resources
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.yangi.resources
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.mig1.resources
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.csproj.GenerateResource.Cache
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.pdb
+C:\Users\user0701\Documents\Visual Studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.dll
+C:\Users\user0701\Documents\Visual Studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.Mvc.dll
+C:\Users\user0701\Documents\Visual Studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.xml
+C:\Users\user0701\Documents\Visual Studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.Mvc.xml
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Xceed.Words.NET.dll
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.assalom.resources
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.assalom1.resources
+C:\Users\user0701\documents\visual studio 2013\Projects\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.csprojResolveAssemblyReference.cache
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebApplication_brr_bmi1.dll.config
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebApplication_brr_bmi1.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebApplication_brr_bmi1.pdb
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Antlr3.Runtime.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.SqlServer.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Newtonsoft.Json.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.Mvc.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Helpers.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Mvc.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Optimization.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Razor.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\WebGrease.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Xceed.Words.NET.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\EntityFramework.SqlServer.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\PagedList.Mvc.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Helpers.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Mvc.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Optimization.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.Razor.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Newtonsoft.Json.xml
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\bin\Antlr3.Runtime.pdb
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.csprojResolveAssemblyReference.cache
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.InitialCreate.resources
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.yangi.resources
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.mig1.resources
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.assalom.resources
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.Migrations.assalom1.resources
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.csproj.GenerateResource.Cache
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.dll
+C:\Users\Farrux Boymurodov\Desktop\BMI\WebApplication_11 — копия\WebApplication_11\web\WebApplication_brr_bmi1\WebApplication_brr_bmi1\WebApplication_brr_bmi1\obj\Debug\WebApplication_brr_bmi1.pdb

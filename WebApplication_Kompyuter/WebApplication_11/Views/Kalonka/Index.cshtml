@@ -1,0 +1,101 @@
+﻿@model PagedList.IPagedList<WebApplication_11.Models.Kalonka>
+
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2 style="text-align-last:center">Kalonkalar</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th><b>Kompaniya nomi</b></th>
+        <th><b>Kalonka nomi</b></th>
+        <th><b>Narxi</b></th>
+        <th><b>Rasmi</b></th>
+        <th><b>Ma'lumoti</b></th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kompaniya.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Narxi)
+        </td>
+        <td>
+            <img src="/Image/@item.Kalon_rasm" width="100" height="100" alt="rasm" />
+
+            @*@Html.DisplayFor(modelItem => item.Kalon_rasm)*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Malumot)
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+
+Sahifa @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) dan @Model.PageCount
+
+
+
+@Html.PagedListPager(Model, page1 => Url.Action("Index", new { page1 }))
+
+
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            <div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/17.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizni yig'ing!</h4>
+                            <p>Cras dignissim hendrerit sdfsdf sdfgsdg sgdgsdg sgsdgsd sdgs hjyjd fgasfgs fhgs sdfdsdgsdgs dgsdgsdfd dfg segsdg diam, condimentum faucibus leo placerat et. Etiam gravida eros ac purus pretium accumsan. Fusce sit amet diam in lectus viverra bibendum. Nunc vulputate venenatis justo, et facilisis dui porttitor ut. Curabitur eu urna et purus convallis pharetra. Integer pellentesque sapien eget ligula rhoncus vel euismod orci semper.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/17.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">O'zingizga qulay bo'lgan operatsion sistemalaridan foydalaning!</h4>
+                            <p>Sed bibendum suscipit posuere. Phasellus nulla est, rhoncus non ultrices eu, lacinia ut est. Donec sodales viverra elit. Ut a malesuada diam. Suspendisse fringilla sagittis auctor. Mauris aliquam suscipit adipiscing. Pellentesque adipiscing ultrices fringilla. Maecenas semper neque nec nulla varius ultrices. Aenean rhoncus enim nec justo malesuada interdum.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/rasm/17.png" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizni qo'shimcha qurilmalar bilan boyiting!</h4>
+                            <p>Nullam pellentesque ipsum eget ante rutrum feugiat at vitae est. Pellentesque nulla ipsum, pretium ac ultrices non, tincidunt id quam. Mauris dignissim dolor quis risus molestie et pulvinar nunc placerat. Nunc feugiat, nunc sit amet lobortis facilisis, nulla arcu tincidunt urna, et blandit eros lectus a duiPhasellus a tellus magna. Fusce pretium ante a massa lobortis,</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

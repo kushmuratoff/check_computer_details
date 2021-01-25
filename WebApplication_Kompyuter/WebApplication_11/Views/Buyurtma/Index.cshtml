@@ -1,0 +1,48 @@
+﻿@model PagedList.IPagedList<WebApplication_11.Models.Buyurtma>
+
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align-last:center">Buyurtmalar</h2>
+
+<p>
+    @Html.ActionLink("Yangi qo'shish", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th><b>Foydalanuvchi logini</b></th>
+        <th><b>Yig'ish</b></th>
+        <th><b>Holati</b></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Foydalanuvchi.Login)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yigish.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Holati)
+        </td>
+        <td>
+            @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+@Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+@Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+Sahifa @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) dan @Model.PageCount
+
+
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))

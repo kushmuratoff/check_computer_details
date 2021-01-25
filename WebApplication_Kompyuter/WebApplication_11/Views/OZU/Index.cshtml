@@ -1,0 +1,114 @@
+﻿@model PagedList.IPagedList<WebApplication_11.Models.OZU>
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    
+    <h2 style="text-align-last:center">OZU</h2>
+
+    <p>
+        @Html.ActionLink("Yangi qo'shish", "Create")
+    </p>
+    <table class="table ">
+        <tr>
+            <th><b>Kompaniya nomi</b></th>
+            <th><b>OZU xajmi</b></th>
+            <th><b>Narxi</b></th>
+            <th><b>Rasmi</b></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kompaniya.Nomi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Xajmi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Narxi)
+                </td>
+                <td>
+                    <img src="/Image/@item.OZU_rasm" width="100" height="100" alt="rasm" />
+
+                    @*@Html.DisplayFor(modelItem => item.OZU_rasm)*@
+                </td>
+                <td>
+                    @Html.ActionLink("O'zgartirish", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Ma'lumotlar", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("O'chirish", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+Sahifa @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) dan @Model.PageCount
+
+
+
+@Html.PagedListPager(Model, page6 => Url.Action("Index", new { page6 }))
+
+<div class="">
+    <div class="wrap">
+        <div class="content">
+            <div class="cont-main">
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/29.JPG" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizga mos OZU tanlang!</h4>
+                            <p>Tezkor xotira - Ingliz tilida RAM (Read Access Memory)
+ya’ni ixtiyoriy kirish mumkin bo‘lgan xotira deyiladi.
+Kompyuterning muhim qismi bo‘lib, protsessor undan amallarni
+bajarish uchun programma, berilganlarni oladi va amalni bajarib,
+natijani yana unda saqlaydi. Kesh xotira - kompyuterning ishlash tezligini oshirish uchun
+ishlatilad i.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grids">
+                    <div class="grid">
+                        <img src="/rasm/35.JPG" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">O'zingizga qulay bo'lgan tezkor xotiradan foydalaning!</h4>
+                            <p>Xotira - kompyuterda programmalar va berilganlarni, amal
+natijalarini saqlaydigan qurilma. Xotiraning turlari ko‘p: tezkor,
+doimiy, kesh, tashqi, video va boshqalar. Barcha turdagi
+xotiralar uchun muhim tushuncha uning hajmidir.Videoxotira - video x o tira mon in o r ekraniga video
+ma’lumotlarni (videotasvirlarni) saqlab turish uchun ishlatiladi.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="cont-grid1">
+                    <div class="grid">
+                        <img src="/rasm/41.JPG" alt="">
+                        <div class="grid-p">
+                            <h4 style="color:#900707">Shaxsiy kompyuteringizni qo'shimcha qurilmalar bilan boyiting!</h4>
+                            <p>Kompyuterlarda berilganlar unga avvaldan
+joylashtirilgan doimiy xotira (BIOS - Basic Input-Output System
+- kiritish chqarishning asosiy sistemasi) mavjud. Bunday
+xotiradan faqat o‘qish mumkin. Shuning uchun ham u ROM
+(Read Only Memory) deb ataladi. Shuning uchun video xotira hajmi
+qancha katta bo‘lsa yasshi.</p>
+                        </div>
+                        <div class="rd-more"><a href="#">Batafsil</a></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!---728x90--->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
